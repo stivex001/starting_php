@@ -53,8 +53,16 @@
 //     $x ++;
 // }
 
-$posts = ["first post", "second posts", "third posts"];
+// $posts = ["first post", "second posts", "third posts"];
 
-foreach($posts as $post) {
-    echo $post;
-}
+// foreach($posts as $post) {
+//     echo $post;
+// }
+
+// Function
+
+function registeredUser ($email)  {
+    return "$email registerd";
+};
+
+echo registeredUser('stephen');
