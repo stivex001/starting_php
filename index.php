@@ -65,4 +65,4 @@ function registeredUser ($email)  {
     return "$email registerd";
 };
 
-echo registeredUser('stephen');
+echo registeredUser('stephen'); 
