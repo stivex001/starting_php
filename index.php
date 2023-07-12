@@ -61,8 +61,18 @@
 
 // Function
 
-function registeredUser ($email)  {
-    return "$email registerd";
-};
+// function registeredUser ($email)  {
+//     return "$email registerd";
+// };
 
-echo registeredUser('stephen'); 
+// echo registeredUser('stephen'); 
+
+$person = [
+    'first_name' => "Gift",
+    'last_name' => "Ojo",
+    'email' => 'ojogift@gmail.com',
+];
+
+foreach($person as $key => $value) {
+    echo "$key - $value<br>";
+}
