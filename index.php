@@ -67,12 +67,30 @@
 
 // echo registeredUser('stephen'); 
 
-$person = [
-    'first_name' => "Gift",
-    'last_name' => "Ojo",
-    'email' => 'ojogift@gmail.com',
-];
+// $person = [
+//     'first_name' => "Gift",
+//     'last_name' => "Ojo",
+//     'email' => 'ojogift@gmail.com',
+// ];
 
-foreach($person as $key => $value) {
-    echo "$key - $value<br>";
-}
+// foreach($person as $key => $value) {
+//     echo "$key - $value<br>";
+// }
+
+// Array functions
+
+    $fruits = ["apple", "banana", "orange"];
+
+    // get length
+    // echo count($fruits);
+
+    // search array
+    // var_dump (in_array("oranges", $fruits));
+
+    // add to array
+    // array_push($fruits, "grape");
+
+    // array_pop($fruits);
+    unset($fruits[1]);
+
+    print_r($fruits);
