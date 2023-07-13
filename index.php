@@ -79,27 +79,43 @@
 
 // Array functions
 
-    $fruits = ["apple", "banana", "orange"];
+$fruits = ["apple", "banana", "orange"];
 
-    // get length
-    // echo count($fruits);
+// get length
+// echo count($fruits);
 
-    // search array
-    // var_dump (in_array("oranges", $fruits));
+// search array
+// var_dump (in_array("oranges", $fruits));
 
-    // add to array
-    // array_push($fruits, "grape");
+// add to array
+// array_push($fruits, "grape");
 
-    // array_pop($fruits);
-    // unset($fruits[1]);
+// array_pop($fruits);
+// unset($fruits[1]);
 
-    // print_r($fruits);
+// print_r($fruits);
 
-    // superglobals  
+// superglobals  
 
-    // var_dump($_SERVER);
+// var_dump($_SERVER);
 
-    echo $_GET['name']
-    ?>
+if (isset($_POST["submit"])) {
+    echo $_POST['name'];
+    echo $_POST['age'];
+}
 
-    <a href="<?php echo $_SERVER['PHP_SELF'] ?>?name=stephen">Click</a>
+?>
+
+<a href="<?php echo $_SERVER['PHP_SELF'] ?>">Click</a>
+
+<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+    <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name">
+    </div>
+    <div>
+        <label for="age">Age: </label>
+        <input type="text" name="age">
+    </div>
+    <input type="submit" value="Submit" name="submit">
+</form>
