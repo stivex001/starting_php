@@ -99,14 +99,26 @@ $fruits = ["apple", "banana", "orange"];
 
 // var_dump($_SERVER);
 
-if (isset($_POST["submit"])) {
-    echo $_POST['name'];
-    echo $_POST['age'];
+// if (isset($_POST["submit"])) {
+//     echo $_POST['name'];
+//     echo $_POST['age'];
+// }
+
+//  COOKIES 
+
+setcookie('name', 'John', time() + 86400 * 30);
+
+if(isset($_COOKIE['name'])){
+    echo $_COOKIE['name'];
 }
+
+// SESSIONS
+
+
 
 ?>
 
-<a href="<?php echo $_SERVER['PHP_SELF'] ?>">Click</a>
+<!-- <a href="<?php echo $_SERVER['PHP_SELF'] ?>">Click</a>
 
 <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
     <div>
@@ -118,4 +130,5 @@ if (isset($_POST["submit"])) {
         <input type="text" name="age">
     </div>
     <input type="submit" value="Submit" name="submit">
-</form>
+</form> -->
+
