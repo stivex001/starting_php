@@ -91,6 +91,15 @@
     // array_push($fruits, "grape");
 
     // array_pop($fruits);
-    unset($fruits[1]);
+    // unset($fruits[1]);
 
-    print_r($fruits);
+    // print_r($fruits);
+
+    // superglobals  
+
+    // var_dump($_SERVER);
+
+    echo $_GET['name']
+    ?>
+
+    <a href="<?php echo $_SERVER['PHP_SELF'] ?>?name=stephen">Click</a>
